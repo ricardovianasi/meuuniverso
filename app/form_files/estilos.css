@@ -1,0 +1,485 @@
+@charset "utf-8";
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+	color: #4D4D4D;
+	background: url(imagens/linhas_bg.png);
+	text-align: left;
+}
+a:link, a:visited {
+	color: #4D4D4D;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #FC4E28;
+	text-decoration: none;
+}
+
+
+h1 {
+	padding: 0 0 20px 4px;
+	font: normal 36px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #FC4E28;
+	text-transform: uppercase;
+}
+h2 {
+	padding: 0 0 10px;
+	font: normal 23px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #FC4E28;
+	text-transform: uppercase;
+}
+h3 {
+	padding: 0 0 5px;
+	font: 12px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #FC4E28;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.listaDestaque li a {
+	color: #069;		
+}
+.listaDestaque li a:hover {
+	color: #FC4E28;		
+}
+#noticiasHome h3 {
+	font: normal 14px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #FC4E28;
+}
+#noticiasHome h3 a:link, #noticiasHome h3 a:visited {
+	color: #FC4E28;
+}
+h4 {
+	padding: 0 0 20px;
+	font: normal 16px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #fea88f;
+}
+.inscricao h4 {
+	padding: 15px 0 2px;
+	font: normal 16px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #fea88f;
+}
+h4 a:link, h4 a:visited {
+	padding: 0 0 20px;
+	font: normal 16px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #FC4E28;
+}
+h5 {
+	padding: 6px 0 10px;
+	font: 10px "Helvetica", Arial, Helvetica, sans-serif;
+}
+h6 {
+	font: normal 12px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #FC4E28;
+	margin: 0 15px 18px 0;
+	line-height: 18px;
+}
+h6 a:link, h6 a:visited {
+	color: #FC4E28;
+}
+.vertCentro {
+	vertical-align: middle;
+}
+.tbEspaco td {
+	padding-top: 20px;
+}
+.tituloNoticia {
+	font: normal 23px "Helvetica", Arial, Helvetica, sans-serif;
+	padding: 0 0 10px;
+}
+.tituloNoticiaHome {
+	padding: 18px 0 0;
+	margin: 18px 0 18px;
+	border-top: 1px solid #CCC;
+}
+.noticiaHomePrincipal {
+	width: 400px;
+	margin-bottom: 100px;
+}
+.listaNoticias {
+	float: right;
+	width: 200px;
+	margin: 0 5px 0 0;
+}
+.listaNoticias h6 {
+	font: normal 12px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #FC4E28;
+	margin: 0;
+	line-height: 18px;
+}
+.dataPublicacao {
+	font: normal 12px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #B2B2B2;
+}
+
+.erro{
+	border:1px solid #C00;
+	margin-bottom:10px;
+	padding:3px;
+	font-size: 13px;
+	color: #C00;
+}
+
+
+#moldura {
+	margin: 0px auto;
+	width: 760px;
+}
+
+#colunaCentral {
+	width: 642px;
+	margin-left: 118px;
+	text-align: left;
+	position: relative;
+}
+
+#menuFuncional {
+	margin: 5px 0;
+}
+
+#menuFuncional a {
+	margin-right: 33px;
+	padding: 2px 0 2px;
+	font: 9px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #FC4E28;
+}
+#menuFuncional a:hover, #menuFuncional a:active {
+	color: #666;
+}
+
+#menuPrincipal {
+	width: 97px;
+	position: absolute;
+	left: -116px;
+	top: 201px;
+	text-align: right;
+}
+
+#menuPrincipal a {
+	display: block;
+	margin-bottom: 4px;
+	font: 11px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #999999;
+}
+#menuPrincipal a:hover, #menuPrincipal a:active {
+	color: #111;
+}
+
+#usuario {
+	position: absolute;
+	right: 5px;
+	top: 170px;
+	text-align: right;
+	font-size: 9px;
+	text-transform: uppercase;
+}
+
+#redeSocial {
+	margin: 10px 24px 0 0;
+}
+#redeSocial a {
+	display: inline;
+	margin: 8px 0;
+}
+
+#menuInterno {
+	width: 210px;
+	float: left;
+}
+#menuInterno img {
+	margin-bottom: 1px;
+}
+
+#menuInterno2 {
+	width: 208px;
+	float: left;
+}
+#menuInterno2 a {
+	display: block;
+	font-size: 10px;
+	color: #FFF;
+	background: url(imagens/bg-menu.png) no-repeat;
+	width: 208px;
+	height: 25px;
+	padding: 6px 0 1px 10px;
+	margin-bottom: -6px;
+}
+#menuInterno2 a:hover, #menuInterno2 a:active {
+	color: #FC0;
+}
+#menuInterno2 a.ativo {
+	background: url(imagens/bg-menu-ativo.png) no-repeat;
+	color: #fc4e28;
+}
+
+#caminhoPagina p {
+	color: #CCCCCC;
+	margin: 8px 0px 20px;
+	font: 9px "Helvetica", Arial, Helvetica, sans-serif;
+}
+#caminhoPagina p a:link, #caminhoPagina p a:visited {
+	color: #CCCCCC;
+}
+#caminhoPagina p a:hover, #caminhoPagina p a:active {
+	color: #FC4E28;
+}
+
+#superBanner {
+	padding-top: 3px;
+}
+
+#conteudo {
+	width: 410px;
+	margin: 0 0 25px 220px;
+}
+#conteudoTexto {
+	margin-left: 80px;
+}
+#conteudo p, #conteudoTexto p, #noticiasHome p {
+	margin: 0 0 18px;
+	line-height: 18px;
+}
+#conteudo p strong, #conteudoTexto p strong {
+	color: #000;
+}
+#conteudo ul {
+	margin: 0 0 30px;
+	line-height: 18px;
+}
+#conteudo ul li {
+	margin: 4px 0 8px 16px;
+}
+
+.imgInterna {
+	margin: 0 0 20px 4px;
+}
+.chamadaInterna {
+	margin: 0 0 22px 144px;	
+}
+.chamadaInterna2 {
+	margin: -75px 0 22px 220px;	
+}
+
+#responsavelOficina {
+	position: relative;
+}
+
+.curriculoResponsavel {
+	visibility: hidden;
+	position: absolute;
+	top: 22px;
+	left: 0px;
+	background: #F7F7F7;
+	width: 370px;
+	padding: 10px 12px;
+	border: 1px solid #CCC;
+	font-size: 12px;
+	line-height: 19px;
+	color: #333;
+}
+#codDependente {
+	visibility: hidden;
+}
+
+
+#boxLogin {
+	width: 429px;
+	height: 370px;
+	margin: 13px 0 0 210px;
+	background: url(imagens/bg_login.png) repeat-y;
+}
+#jaCadastrado, #naoCadastrado {
+	float: left;
+	width: 200px;
+	margin-left: 10px;
+}
+
+#rodape {
+	background: url(imagens/bg_rodape.png) repeat-x;
+	color: #FFF;
+	height: 102px;
+	padding: 15px 0px 0px 10px;
+	margin: 20px 0px 0px;
+	font: 11px "Helvetica", Arial, Helvetica, sans-serif;
+	position: relative;
+}
+#assinaturas {
+	position: absolute;
+	right: 2px;
+	bottom: -20px;
+}
+.copyright {
+	font-size: 10px;
+}
+
+
+form {
+	font: 10px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #4D4D4D;
+}
+form p {
+	margin: 10px 0;
+	line-height: 16px;
+}
+label {
+	font: 10px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #4D4D4D;
+	margin-top: 6px;
+	display: block;
+	text-transform: uppercase;
+	min-width: 100px;
+	width:auto !important;
+	
+}
+label span.sub {
+	text-transform: lowercase;
+	color: #666;
+}
+input, textarea, select {
+	border: 1px solid #808080;
+	color: #4D4D4D;
+	font-size: 12px;
+}
+input {
+	padding: 1px 2px;
+}
+.semBorda {
+	border: none;
+}
+
+.w180 {
+	width: 180px;
+}
+.btForm {
+	background: #FD7401;
+	color: #FFF;
+	margin: 10px 0px;
+	padding: 2px 8px;
+	border: none;
+	font: 10px "Helvetica", Arial, Helvetica, sans-serif;
+}
+
+.tableFiltros{
+	font: 12px "Helvetica", Arial, Helvetica, sans-serif;
+	margin: 0px 0 10px 0;
+}
+.tableFiltros td{
+	padding: 3px;
+}
+
+.tableInscricoes {
+	font: 12px "Helvetica", Arial, Helvetica, sans-serif;
+	margin: 0px 0 15px 0;
+}
+.tableInscricoes td{
+	padding: 1px;
+	font-size: 11px;
+}
+
+.cabecalhoTable{
+	background-color:#F2F2F2;
+	font-size:13px;
+}
+
+.cabecalhoInscricoes{
+	font-size:12px;
+	font-weight: bold;
+	color: #000;
+	border-bottom: 1px solid #CCC;
+}
+
+.cabecalhoInscricoes a{
+	color: #000;
+}
+
+.bgAzulClaro{
+	background-color:#FFF;
+}
+.linhasTabelas {
+	border-bottom: 1px solid #E2E2E2;
+}
+.msgErro {
+	text-transform: uppercase;
+	color: #900;
+	padding: 0;
+	margin: 0 0 7px;
+	font-size: 13px;
+	padding: 5px;
+	background-color: #ffffcc;
+	border:solid 1px #c2c2c2;
+}
+.obrigatorio {
+	color: #C00;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.obrigatorio span {
+	font-size: 18px;
+	color: #900;
+}
+#menuCinemaSemFronteiras {
+	height: 22px;
+	text-transform: uppercase;
+	padding: 8px 0 0 0;
+	margin: 0 0 0 -8px;
+}
+#menuCinemaSemFronteiras a {
+	font-size: 9px;
+	margin: 0px 8px;
+}
+#menuCinemaSemFronteiras a:link, #menuCinemaSemFronteiras a:visited {
+	color: #333;
+}
+
+.flashHome {
+	float: right;
+	width: 340px;
+	margin: 0 0 0 0;
+}
+
+.noticiaHomePrincipal2 {
+	width: 310px;
+	margin-bottom: 50px;
+}
+
+#tabelaTermoCE
+	{
+		width:100%;
+		border-collapse: collapse;
+		font-size: 10px;
+	}
+	
+#tooltip{
+	position:absolute;
+	border:1px solid #666;
+	padding:4px 7px;
+	color: #51514A;
+	display:none;
+	background: #E1E1E1;
+	z-index: 99999;
+	width: 200px;
+	text-align: left;
+}	
+	
+.destaque02 {
+	background: #FD7401;
+	color: #FFF;
+	margin: 10px 0px;
+	padding: 6px 12px;
+	border: none;
+	font: 14px "Helvetica", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}	
+.destaque02 a:link, .destaque02 a:visited {
+	color: #FFF;
+}
+.destaque02 a:hover, .destaque02 a:active {
+	color: #FF3;
+}

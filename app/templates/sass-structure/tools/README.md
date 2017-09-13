@@ -1,5 +1,0 @@
-# tools
-
-- Mixins
-- Functions
-- Helpers

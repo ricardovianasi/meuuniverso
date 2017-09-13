@@ -1,1 +1,0 @@
-Eg.: Generic scripts

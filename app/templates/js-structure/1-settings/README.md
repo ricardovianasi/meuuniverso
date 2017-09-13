@@ -1,1 +1,0 @@
-Eg.: General settings, global variables

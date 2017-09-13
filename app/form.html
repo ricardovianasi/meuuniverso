@@ -1,0 +1,1287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)http://cinemasemfronteiras.com.br/site/cadastro_filme_full.php -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+
+
+<meta property="og:title" content="Universo Produção">
+<meta property="og:type" content="article">
+<meta property="og:description" content="Website da Universo Produção - Realizadora das Mostras de Cinema de Tiradentes, Ouro Preto e Belo Horizonte">
+<meta property="og:image" content="http://www.universoproducao.com.br/site/imagens/logo-universo-fb.png">
+
+
+<meta name="description" content="Site da Universo Produção">
+<meta name="keywords" content="universo, producao, mostra, cinema, tiradentes, ouro, preto, cinebh, cinema sem fronteiras, festival, festivais, cinema, curtas, bh, vídeo, artes cenicas, musica, artes, laser, lazer, leis de incentivo, belo horizonte, minas gerais, mg, brasil, producao, producoes, entretenimento">
+<meta name="robots" content="ALL">
+<meta name="rating" content="General">
+<meta name="author" content="Feira Modderna">
+<meta name="language" content="pt-br">
+
+<link href="./form_files/css" rel="stylesheet" type="text/css">
+
+<link href="./form_files/estilos.css" rel="stylesheet" type="text/css">
+<link href="./form_files/print.css" rel="stylesheet" type="text/css" media="print">
+<script src="./form_files/SpryCollapsiblePanel.js.download" type="text/javascript"></script>
+<!--<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+<script src="js/jquery.printElement.js" type="text/javascript"></script>-->
+<link href="./form_files/SpryValidationTextarea.css" rel="stylesheet" type="text/css">
+<link href="./form_files/SpryValidationRadio.css" rel="stylesheet" type="text/css">
+<link href="./form_files/SpryValidationTextField.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./form_files/SpryValidationTextarea.js.download"></script>
+<script type="text/javascript" src="./form_files/SpryValidationRadio.js.download"></script>
+<script type="text/javascript" src="./form_files/SpryValidationTextField.js.download"></script>
+<link href="./form_files/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css">
+<script>
+
+<script src="jquery-1.4.2.min.js" type="text/javascript" ></script>
+<!-- <script src="scripts_gerais.js" type="text/javascript" ></script> -->
+
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+	var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+	if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+	d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+
+<title>:: UNIVERSO PRODUÇÃO &gt; Inscrições &gt; Inscrição de Filme ::</title>
+<script type="text/javascript" src="./form_files/jquery-latest.min.js.download"></script>
+
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+
+		$("select[name=AnoProducaoObra]").ready(function(){
+			alteraMeses();
+			//alteraBox();
+			});
+		$("select[name=AnoProducaoObra]").change(function(){
+			alteraMeses();
+			//alteraBox();
+			});
+		$("select[name=ClasseObra]").ready(function(){
+			//alteraMostra();
+			});
+		$("select[name=ClasseObra]").change(function(){
+			//alteraMostra();
+			});
+//       function alteraBox() {
+//       	// var ano = $("select[name=AnoProducaoObra]").val();
+//       	// if(ano == 2013){
+//       	// 	document.getElementById('ano2013').style.display='block';
+//       	// 	document.getElementById('ano2014').style.display='none';
+//       	// 	document.getElementById('mostraop2').checked = "";
+//       	// }else{
+//       	// 	document.getElementById('ano2013').style.display='block';
+//       	// 	document.getElementById('ano2014').style.display='block';
+//       	// }
+//       }
+		// function alteraMeses()
+		// 	{
+
+		// 		var ano = $("select[name=AnoProducaoObra]").val();
+		// 			if(ano == 2013)
+		// 				{
+		// 					var meses = '<option value="1">Janeiro</option>';
+		// 					meses += '<option value="2">Fevereiro</option>';
+		// 					meses += '<option value="3">Março</option>';
+		// 					meses += '<option value="4">Abril</option>';
+		// 					meses += '<option value="5">Maio</option>';
+		// 					meses += '<option value="6">Junho</option>';
+		// 					meses += '<option value="7">Julho</option>';
+		// 					meses += '<option value="8">Agosto</option>';
+		// 					meses += '<option value="9">Setembro</option>';
+		// 					meses += '<option value="10">Outubro</option>';
+		// 					meses += '<option value="11">Novembro</option>';
+		// 					meses += '<option value="12">Dezembro</option>';
+
+
+		// 					$("select[name=MesProducaoObra]").html(meses);
+		// 				}
+		// 			else
+		// 				{
+		// 					var meses = '<option value="1">Janeiro</option>';
+		// 					meses += '<option value="2">Fevereiro</option>';
+		// 					meses += '<option value="3">Março</option>';
+		// 					meses += '<option value="4">Abril</option>';
+		// 					meses += '<option value="5">Maio</option>';
+		// 					meses += '<option value="6">Junho</option>';
+		// 					meses += '<option value="7">Julho</option>';
+		// 					meses += '<option value="8">Agosto</option>';
+		// 					meses += '<option value="9">Setembro</option>';
+		// 					meses += '<option value="10">Outubro</option>';
+		// 					meses += '<option value="11">Novembro</option>';
+		// 					meses += '<option value="12">Dezembro</option>';
+
+		// 					$("select[name=MesProducaoObra]").html(meses);
+		// 				}
+		// 	}
+
+		function alteraMeses()
+	{
+
+		var ano = $("select[name=AnoProducaoObra]").val();
+			if(ano == '2016')
+				{
+					var meses = '<option value="1">Janeiro</option>';
+					meses += '<option value="2">Fevereiro</option>';
+					meses += '<option value="3">Março</option>';
+					meses += '<option value="4">Abril</option>';
+					meses += '<option value="5">Maio</option>';
+					meses += '<option value="6">Junho</option>';
+					meses += '<option value="7">Julho</option>';
+					meses += '<option value="8">Agosto</option>';
+					meses += '<option value="9">Setembro</option>';
+					meses += '<option value="10">Outubro</option>';
+					meses += '<option value="11">Novembro</option>';
+					meses += '<option value="12">Dezembro</option>';
+
+
+					$("select[name=MesProducaoObra]").html(meses);
+					//$('div#mostra2').hide();
+				}
+			else
+				{
+					var meses = '<option value="1">Janeiro</option>';
+					meses += '<option value="2">Fevereiro</option>';
+					meses += '<option value="3">Março</option>';
+					meses += '<option value="4">Abril</option>';
+					meses += '<option value="5">Maio</option>';
+					meses += '<option value="6">Junho</option>';
+					meses += '<option value="7">Julho</option>';
+					meses += '<option value="8">Agosto</option>';
+					meses += '<option value="9">Setembro</option>';
+					meses += '<option value="10">Outubro</option>';
+					meses += '<option value="11">Novembro</option>';
+					meses += '<option value="12">Dezembro</option>';
+					$("select[name=MesProducaoObra]").html(meses);
+					//$('div#mostra2').show();
+				}
+	}
+
+	function alteraMostra()
+	{
+
+		var mostra = $("select[name=ClasseObra]").val();
+			if(mostra == 'Media')
+				{
+					$("#mostra1").hide();
+				}
+			else
+				{
+					$("#mostra1").show();
+				}
+	}
+
+
+		});
+</script>
+
+<script type="text/javascript">
+function alternaJaParticipou( id ) {
+	var obj = document.getElementById( id );
+	if ( id.checked ){
+		if( id.value=='1' ) {
+			document.getElementById('campoJaParticipou').style.display='block';
+		}else if( id.value=='0' ) {
+			document.getElementById('campoJaParticipou').style.display='none';
+		}
+	}
+}
+
+
+function alternaDialogos( id ) {
+	var obj = document.getElementById( id );
+	if ( id.checked ){
+		if( id.value=='1' ) {
+			document.getElementById('campoIdiomas').style.display='block';
+		}else if( id.value=='0' ) {
+			document.getElementById('campoIdiomas').style.display='none';
+		}
+	}
+}
+
+function alternaLegenda( id ) {
+	var obj = document.getElementById( id );
+	if ( id.checked ){
+		if( id.value=='1' ) {
+			document.getElementById('campoIdiomasLegenda').style.display='block';
+		}else if( id.value=='0' ) {
+			document.getElementById('campoIdiomasLegenda').style.display='none';
+		}
+	}
+}
+function alternaListaDialogos( id ) {
+	var obj = document.getElementById( id );
+	if ( id.checked ){
+		if( id.value=='1' ) {
+			document.getElementById('campoListaDialogos').style.display='block';
+		}else if( id.value=='0' ) {
+			document.getElementById('campoListaDialogos').style.display='none';
+		}
+	}
+}
+
+function alternaListaAcessibilidade( id ) {
+	var obj = document.getElementById( id );
+	if ( id.checked ){
+		if( id.value=='1' ) {
+			document.getElementById('campoListaAcessibilidade').style.display='block';
+		}else if( id.value=='0' ) {
+			document.getElementById('campoListaAcessibilidade').style.display='none';
+		}
+	}
+}
+
+function alternaCertificadoCpb( id ) {
+	var obj = document.getElementById( id );
+	if ( id.checked ){
+		if( id.value=='1' ) {
+			document.getElementById('numCertificadoCpb').style.display='block';
+		}else if( id.value=='0' ) {
+			document.getElementById('numCertificadoCpb').style.display='none';
+		}
+	}
+}
+
+function alternaNacionalidade( id ) {
+	var obj = document.getElementById( id );
+	if ( id.checked ){
+		if( id.value=='Brasileiro' ) {
+			document.getElementById('campoBrasileiro').style.display='block';
+			document.getElementById('campoInternacional').style.display='none';
+		}else if( id.value=='Internacional' ) {
+			document.getElementById('campoBrasileiro').style.display='none';
+			document.getElementById('campoInternacional').style.display='block';
+		}
+	}
+}
+
+
+function alternaMostrinha( id ) {
+	var obj = document.getElementById( id );
+		if( id.options[id.selectedIndex].value=='Curta' ) {
+			document.getElementById('mostrinha').style.display='block';
+		}else if( id.options[id.selectedIndex].value!='Curta' ) {
+			document.getElementById('mostrinha').style.display='none';
+		}
+		if( id.options[id.selectedIndex].value=='Media' ) {
+			//document.getElementById('mostra1').style.display='none';
+		}else if( id.options[id.selectedIndex].value!='Media' ) {
+			//document.getElementById('mostra1').style.display='block';
+		}
+
+}
+
+
+function alternaJaParticipouInicial( ) {
+	var obj = "S"
+	document.getElementById('campoJaParticipou').style.display='block';
+	if( obj=='N' ) {
+		document.getElementById('campoJaParticipou').style.display='none';
+	}
+}
+
+function mostraCampoTipoCenas() {
+
+	var classificacao = document.getElementById('ClassificacaoObra').value;
+
+	var i;
+	for (i=0;i<document.form1.certificado.length;i++){
+	if (document.form1.certificado[i].checked)
+		break;
+	}
+	var certificado = document.form1.certificado[i].value;
+
+	if(certificado == '1') {
+		document.getElementById('classificacao').style.display='block';
+		document.getElementById('textoClassificacao1').style.display='block';
+		document.getElementById('textoClassificacao2').style.display='none';
+	} else {
+		document.getElementById('classificacao').style.display='block';
+		document.getElementById('textoClassificacao1').style.display='none';
+		document.getElementById('textoClassificacao2').style.display='block';
+	}
+
+	if(certificado == '0' && classificacao != "livre" && classificacao != "0") {
+		document.getElementById('contCenas').style.display='block';
+	} else {
+		document.getElementById('contCenas').style.display='none';
+	}
+
+}
+</script>
+
+<script type="text/javascript">
+function limitaTextarea(valor) {
+	quantidade = 500;
+	total = valor.length;
+
+	if(total <= quantidade) {
+		resto = quantidade- total;
+		document.getElementById('contador').innerHTML = resto;
+	} else {
+		document.getElementById('SinopseObra').value = valor.substr(0, quantidade);
+	}
+}
+</script>
+
+
+<script type="text/javascript">
+			$(document).ready(function(){
+				$("a[rel=modal]").click( function(ev){
+					ev.preventDefault();
+
+					var id = $(this).attr("href");
+
+					var alturaTela = $(document).height();
+					var larguraTela = $(window).width();
+
+					//colocando o fundo preto
+					$('#mascara').css({'width':larguraTela,'height':alturaTela});
+					$('#mascara').fadeIn(1000);
+					$('#mascara').fadeTo("slow",0.8);
+
+					var left = ($(window).width() /2) - ( $(id).width() / 2 );
+					var top = ($(window).height() / 2) - ( $(id).height() / 2 );
+
+					//$(id).css({'top':top,'left':left});
+					$(id).css({'top':'1868px','left':left});
+					$(id).show();
+				});
+
+				$("#mascara").click( function(){
+					$(this).hide();
+					$(".window").hide();
+				});
+
+				$('.fechar').click(function(ev){
+					ev.preventDefault();
+					$("#mascara").hide();
+					$(".window").hide();
+				});
+			});
+		</script>
+
+		<style type="text/css">
+
+		.window{
+			display:none;
+			width:600px;
+			height:400px;
+			position:absolute;
+			left:0px;
+			top:800px;
+			background:#FFF;
+			z-index:9900;
+			padding:15px 25px;
+			border-radius:10px;
+			overflow: scroll;
+			text-align: left;
+		}
+
+		#mascara{
+			position:absolute;
+			left:0;
+			top:0;
+			z-index:9000;
+			background-color:#000;
+			display:none;
+		}
+
+		.fechar{display:block; text-align:right;}
+
+		</style>
+
+
+</head>
+<body onload="MM_preloadImages(&#39;imagens/menu_pag_inicial_over.png&#39;,&#39;imagens/menu_usuario_over.png&#39;,&#39;imagens/menu_webmail_over.png&#39;,&#39;imagens/menu_fale_conosco_over.png&#39;,&#39;imagens/menu_apresentacao_over.png&#39;,&#39;imagens/menu_atuacao_over.png&#39;,&#39;imagens/menu_cinema_over.png&#39;,&#39;imagens/menu_teatro_over.png&#39;,&#39;imagens/menu_musica_over.png&#39;,&#39;imagens/menu_empresarial_over.png&#39;,&#39;imagens/menu_cidadania_over.png&#39;,&#39;imagens/menu_noticias_over.png&#39;,&#39;imagens/menu_inscricoes_over.png&#39;,&#39;imagens/menu_int_inscricoes_over.png&#39;)">
+<div id="moldura">
+
+
+
+
+
+		<a name="janela1"></a>
+		<div class="window" id="janela1">
+			<a href="http://cinemasemfronteiras.com.br/site/cadastro_filme_full.php#" class="fechar">[X] FECHAR</a>
+			<p align="center">
+	<strong>11ª CINEBH – BH INTERNATIONAL FILM FESTIVAL</strong></p>
+<p align="center">
+	<strong>22 a 27 de agosto 2017</strong></p>
+<p align="center">
+	<strong>REGULAMENTO</strong></p>
+<p align="center">
+	<strong>INSCRIÇÃ</strong><strong>O DE FILMES | MOSTRA A CIDADE EM MOVIMENTO</strong></p>
+<p align="center">
+	&nbsp;</p>
+<p>
+	<strong>1 – SOBRE A MOSTRA CINEBH </strong></p>
+<p>
+	<strong>11ª MOSTRA CINEBH - </strong><strong>BH INTERNATIONAL FILM FESTIVAL</strong></p>
+<p>
+	Mostra Internacional de Cinema de Belo Horizonte idealizada para desvendar a <strong>nova cadeia produtiva audiovisual e contextualizar o mercado audiovisual</strong> – perfil, possibilidades, alternativas e a realidade de exibição no Brasil em intercâmbio com o mundo e com a presença de outros países. É um espaço de formação e reflexão sobre a sustentabilidade do cinema nacional, a sua capacidade de seduzir o público, as possibilidades e viabilidade de co-produção internacional, as tendências, as novas mídias e tecnologias. A programação é gratuita e oferece exibições de filmes nacionais e internacionais – longas, médias e curtas película e digital, homenagens, <strong>Brasil CineMundi – Encontro Internacional de Coprodução</strong> com a presença de convidados internacionais, debates, sessões cine-escola, mostrinha de cinema, exposições, atrações artísticas.</p>
+<p style="margin-left:36.0pt;">
+	®&nbsp;&nbsp;&nbsp;&nbsp; Data prevista de realização do evento: <strong>22 a 27 de agosto de 2016</strong></p>
+<p style="margin-left:36.0pt;">
+	®&nbsp;&nbsp;&nbsp;&nbsp; Local de realização: <strong>Belo Horizonte – MG</strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>2 - A MOSTRA ‘A CIDADE EM MOVIMENTO’&nbsp; </strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	Criada a partir de 2016, como uma seção na programação da Mostra CineBH, a mostra <em>A Cidade em Movimento</em> consite em uma ação coletiva em diálogo com as questões, pulsações e movimentos atuais da cidade Belo Horizonte e sua região metropolitana, e que são expressos em performance, exibição de filmes, rodas de conversa e outras manifestações artísticas. É uma janela para dar visibilidade aos discursos produtivos e criativos, ampliando as suas conexões. É também um espaço para ocupar, refletir e propor caminhos para o futuro, do ponto de vista de quem movimenta a cidade.</p>
+<p>
+	Os filmes exibidos dentro dessa mostra constituem um registro e um acervo fundamentais para o entendimento do espaço urbano contemporâneo.</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>3 – TEMA PARA 2017: </strong><strong>Quem Movimenta a Cidade?</strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	Em 2016 procuramos exibir conteúdos audiovisuais que tivessem atuado, a seu tempo, como um manifesto contemporâneo das cidades e que alteraram ou questionaram as suas relações de poder. Absorvido pelos movimentos como parte de sua linguagem, esses conteúdos se integraram e se adaptaram fielmente a cada discurso representado. O critério então definido para a mostra em 2016 foi entender o motor desse movimento, o impulso de cada um deles. Essa mostra teve o nome de CINEMA DE MOVIMENTO.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Em 2017 ampliamos esse olhar para manifestações que investigam as pessoas, lugares e as comunidades dos sujeitos impulsionadores desse movimento. Além de registros de ações, queremos também observar as abordagens e estéticas propostas, tanto no momento de realização quanto no de circulação e exibição, para entender melhor que tipo de percurso esses discursos e posturas fazem pelas cidades. Queremos entender o espaço urbano como local para onde convergem esses discursos, onde as ideias podem provocar reações e sugerir atitudes consonantes com alguma proposta de futuro e de comportamento. Mais do que um olhar para os Movimentos Sociais emergentes em nosso tempo, queremos perguntar QUEM MOVIMENTA A CIDADE?</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>3.1 CATEGORIAS</strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	Os filmes enviados para a Mostra ‘A Cidade Em Movimento’ deverão ter algum tipo de conexão com os Movimentos emergentes na cidade (Sociais, Artísticos, Culturais, Políticios) e devem estar inscritos em uma das categorias abaixo descritas:</p>
+<p>
+	<strong>3.1.1 </strong><strong>PESSOAS</strong></p>
+<p>
+	Conteúdo audiovisual que contemple a ação específica de alguma pessoa, relevante dentro de seu contexto. Pode ser política, artística, ou de qualquer natureza, em reação ao que a cidade propõe como comportamento. Podem ser retratos, performances, posturas ou registros de ações que tenham poder catalizador dentro de suas comunidades.</p>
+<p>
+	<strong>3.1.2 </strong><strong>LUGARES</strong></p>
+<p>
+	Conteúdo audiovisual onde o espaço da cidade (rua, bairro, lugar) tenha significado relevante dentro dos movimentos contemporâneos, pela força intrínseca de suas conexões, desenho ou importância histórica na cidade.</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>3.1.3 </strong><strong>COMUNIDADES</strong></p>
+<p>
+	Conteúdo audiovisual em que as abordagens levem em conta as organizações das pessoas nos diversos espaços da cidade. O foco central desses trabalhos deve ser a colaboração, o compartilhamento, as comunidades, os grupos emergentes.</p>
+<p>
+	<strong>4 - </strong><strong>SOBRE A INSCRIÇÃ</strong><strong>O DE FILMES</strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	4.1 – Período de inscrição: 17 de maio a 09 de junho de 2017 (até 21:00 horas – horário de Brasília)</p>
+<p>
+	4.2 – Poderão ser inscritos <strong>filmes brasileiros produzidos</strong> dentro da <strong>Região Metropolitana de Belo Horizonte</strong>, que é formada pelos seguintes 34 (trinta e quatro) municípios: <strong>Baldim, Belo Horizonte, Betim, Brumadinho, Caeté, Capim Branco, Confins, Contagem, Esmeraldas, Florestal, Ibirité, Igarapé, Itaguara, Itatiaiuçu, Jaboticatubas, Juatuba, Lagoa Santa, Mário Campos, Mateus Leme, Matozinhos, Nova Lima, Nova União, Pedro Leopoldo, Raposos, Ribeirão das Neves, Rio Acima, Rio Manso, Sabará, Santa Luzia, São Joaquim de Bicas, São José da Lapa,&nbsp; Sarzedo, Taquaraçu de Minas e Vespasiano.</strong></p>
+<p>
+	4.3 – São aceitas inscrições de <strong>LONGAS, MÉDIAS e CURTAS</strong> <strong>finalizados em qualquer ano</strong>.</p>
+<p>
+	4.4 – <strong>LONGAS -</strong> Filmes brasileiros com duração <u>superior a 60 minutos</u></p>
+<p>
+	4.5 – <strong>MÉDIAS -</strong> Filmes brasileiros com duração entre <u>30 e 60 minutos</u></p>
+<p>
+	4.6 – <strong>CURTAS -</strong> Filmes brasileiros com duração de <u>até&nbsp; 30 minutos</u></p>
+<p>
+	4.7 – Poderão ser inscritas obras audiovisuais dos gêneros documentários, ficção, animação, experimental e videoarte.</p>
+<p>
+	4.8 – Não serão aceitas inscrições de filmes que não se enquadrem nas categorias, assim como também não serão aceitos vídeos publicitários e/ou institucionais.</p>
+<p>
+	4.9 – A inscrição é gratuita e acontece através do site&nbsp;www.cinebh.com.br</p>
+<p>
+	&nbsp;</p>
+<p>
+	4.10 – O preenchimento da ficha de inscrição deverá ser feito pela internet, através do site&nbsp;<a href="http://www.cineop.com.br/">www.cinebh.com.br</a>&nbsp;e será composta de:</p>
+<p>
+	&nbsp;</p>
+<p>
+	4.10.1 – Primeira Parte</p>
+<p>
+	- Identificação do proponente</p>
+<p>
+	4.10.2 – Segunda Parte</p>
+<p>
+	- Dados do filme para seleção (ficha técnica);</p>
+<p>
+	- Link do filme para seleção. No momento da inscrição você deverá disponibilizar um link para visualização do filme e a senha de acesso, quando for o caso.</p>
+<p>
+	- Inserção de uma foto ilustrativa do filme:</p>
+<p style="margin-left:36.0pt;">
+	•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O nome do arquivo não deve conter caracteres especiais como acentos, “ç”, etc...</p>
+<p style="margin-left:36.0pt;">
+	•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O tamanho do arquivo deve ser entre 500Kb e 3MB</p>
+<p style="margin-left:36.0pt;">
+	•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Formatos aceitos: JPG, JPEG</p>
+<p style="margin-left:36.0pt;">
+	&nbsp;</p>
+<p>
+	4.11 –&nbsp;<strong>A inscri</strong><strong>çã</strong><strong>o só será </strong><strong>validada ap</strong><strong>ó</strong><strong>s o recebimento do material, a saber:</strong></p>
+<p>
+	&nbsp;</p>
+<p style="margin-left:18.0pt;">
+	•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Ficha preenchida online com o link v</strong><strong>á</strong><strong>lido</strong>&nbsp;<strong>para acesso ao filme</strong><strong>&nbsp;e senha,</strong>&nbsp;quando houver.</p>
+<p style="margin-left:18.0pt;">
+	É considerado válido o link que permita a visualização do filme, preferencialmente via&nbsp;<em>Youtube</em>&nbsp;ou&nbsp;<em>Vimeo</em>. NÃO serão aceitos links de programas para download, como&nbsp;<em>WeTransfer</em>&nbsp;e&nbsp;<em>SendSpace</em>.</p>
+<p style="margin-left:18.0pt;">
+	&nbsp;</p>
+<p style="margin-left:18.0pt;">
+	<strong>Aten</strong><strong>ção quanto ao material enviado para seleçã</strong><strong>o</strong>: link e/ou senha de acesso incorretos, que não permitirem a visualização do filme, poderão invalidar a sua inscrição.</p>
+<p style="margin-left:18.0pt;">
+	&nbsp;</p>
+<p>
+	4.12 – Para os filmes selecionados: os dados constantes na ficha de inscrição serão considerados oficiais para divulgação e publicação no material gráfico e site oficial do evento. Atenção ao preencher a ficha.</p>
+<p>
+	4.13 – Em caso de problemas durante a inscrição, solicitamos que entre em contato com a produção do evento, <strong>dentro da data/horário limite para as inscrições</strong>, através do email: contato@universoproducao.com.br</p>
+<p>
+	<strong>5 –SELEÇÃO</strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	5.1 –&nbsp; A seleção dos filmes será feita por uma comissão nomeada pela coordenação do evento.</p>
+<p>
+	5.2 – A divulgação do resultado dos filmes selecionados está prevista para até o dia 20 de julho de 2017.</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>6 – CÓPIA PARA EXIBIÇÃO</strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	Para os filmes selecionados, a orientação técnica sobre os formatos de exibição na mostra e na Rede Minas (quando for o caso) e o prazo para envio da cópia serão informados pela coordenação do evento. Serão considerados os dados preenchidos na ficha de inscrição.</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>7 – DISPOSIÇÕES GERAIS</strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	7.1 – A participação na inscrição de filme pressupõe a aceitação das seguintes bases:</p>
+<p>
+	&nbsp;- O trabalho inscrito e selecionado está automaticamente autorizado a ser exibido como parte integrante da programação do evento para o qual foi selecionado.</p>
+<p>
+	&nbsp;- Os participantes cedem, automaticamente, à organização dos eventos os direitos de transmissão de extratos dos filmes e vídeos selecionados para divulgação da programação do evento.</p>
+<p>
+	7.2 – O responsável pela inscrição declara, no ato da inscrição, que o produtor da obra é o detentor de todos os direitos cabíveis garantindo sua exibição na Mostra para a qual o filme foi selecionado.</p>
+<p>
+	7.3 – Todos os elementos ou qualquer tipo de trabalho utilizados no filme inscrito, incluindo a trilha sonora e imagens de arquivo, não violam qualquer direito de uso de imagem ou de propriedade intelectual de terceiros, concordando assim, o responsável pela inscrição, em assumir exclusiva responsabilidade legal por uma eventual reclamação, ação judicial ou litígio, seja direta ou indiretamente, decorrente da exibição ou uso dos trabalhos.</p>
+<p>
+	7.4 – As datas e horários das exibições das diversas sessões dos filmes participantes são decididos a partir de critérios definidos único e exclusivamente pela direção do evento.</p>
+<p>
+	7.5 – Os links dos filmes enviados para seleção serão arquivados e passarão a fazer parte do acervo da Universo Produção/Instituto Universo Cultural e não serão utilizados para fins comerciais.</p>
+<p>
+	7.6 – A direção do evento poderá retirar da programação a qualquer momento o filme que não cumprir as normas deste regulamento ou que falsear as mesmas.</p>
+<p>
+	7.7 – Os casos omissos serão solucionados pela direção dos eventos.</p>
+<p>
+	7.8 – Os procedimentos de inscrição para seleção dos filmes e a participação do filme selecionado no evento vinculam o participante à plena aceitação deste regulamento.</p>
+<p>
+	&nbsp;</p>
+			<a href="http://cinemasemfronteiras.com.br/site/cadastro_filme_full.php#" class="fechar">[X] FECHAR</a>
+		</div>
+
+
+
+<div id="colunaCentral">
+	
+<!--<div id="topo">
+        	<div id="menuFuncional">
+                <a href="index.php">P&Aacute;GINA INICIAL</a>
+                <a href="acesso.php">MENU DO USU&Aacute;RIO</a>
+                <a href="http://webmail.universoproducao.com.br/" target="_blank">WEBMAIL</a>
+                <a href="newsletter.php">NEWSLETTER</a>
+                <a href="fale.php">FALE CONOSCO</a>
+                <a href="#" class="tooltip" title="Coming Soon!">ENGLISH VERSION</a>
+            </div>
+            <img src="imagens/logotipo-topo-2.png" width="642" height="112" alt="Universo Produção" />
+            
+        </div>-->	<div id="menuPrincipal">
+
+    <!--<a href="apresentacao.php?menu=apr" >APRESENTA&Ccedil;&Atilde;O</a>
+    <a href="atuacao.php?menu=atu" >ATUA&Ccedil;&Atilde;O</a>
+    <a href="cinema.php?menu=cin" >CINEMA</a>
+    <a href="teatro.php?menu=tea" >TEATRO</a>
+    <a href="musica.php?menu=mus" >M&Uacute;SICA</a>
+    <a href="empresarial.php?menu=emp" >EMPRESARIAL</a>
+    <a href="cidadania.php?menu=cid" >CIDADANIA</a>
+    <a href="noticia_detalhe.php?menu=not&id=" >NOT&Iacute;CIAS</a>-->
+    <a href="http://cinemasemfronteiras.com.br/site/acesso.php">MENU DO USUÁRIO</a>
+    <a href="http://cinemasemfronteiras.com.br/site/inscricoes.php?menu=ins">INSCRIÇÕES</a>
+
+<!--<div id="redeSocial"><img src="imagens/redes-sociais02.png" width="122" height="20" alt=" " usemap="#Map" border="0" />&nbsp;&nbsp;&nbsp;-->
+</div>
+<!--<map name="Map" id="Map">
+      <area shape="rect" coords="3,-1,24,19" href="http://twitter.com/universoprod" target="_blank" alt="Twitter" />
+      <area shape="rect" coords="29,0,49,19" href="http://www.facebook.com/universoproducao" target="_blank" alt="Facebook" />
+      <area shape="rect" coords="54,1,71,19" href="http://www.flickr.com/photos/universoproducao" target="_blank" alt="Flickr" />
+      <area shape="rect" coords="78,2,97,18" href="http://instagram.com/universoproducao" target="_blank" alt="Instagram" />
+      <area shape="rect" coords="102,1,123,19" href="http://www.youtube.com/user/universoproducao/featured" target="_blank" alt="Youtube" />
+    </map>-->
+</div>
+
+<div id="usuario">
+USUÁRIO: Ricardo Viana</div>
+	<div id="caminhoPagina">
+	<p>PÁGINA INICIAL &gt; INSCRIÇÕES &gt; INSCRIÇÃO DE FILME</p>
+	</div>
+	<h1><img src="./form_files/tit_inscricoes.png" width="199" height="40" alt="Inscri��es"></h1>
+	<div id="menuInterno"> <a href="http://cinemasemfronteiras.com.br/site/meusdados.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;meusdados&#39;,&#39;&#39;,&#39;imagens/menu_int_meusdados_over.png&#39;,1)"> <img src="./form_files/menu_int_meusdados.png" alt="Meus Dados" name="meusdados" width="208" height="25" border="0" id="meusdados"></a> <a href="http://cinemasemfronteiras.com.br/site/inscricoes.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;inscricoesinterna&#39;,&#39;&#39;,&#39;imagens/menu_int_inscricoes_over.png&#39;,1)"><img src="./form_files/menu_int_inscricoes.png" alt="Inscrições" name="inscricoesinterna" width="208" height="25" border="0" id="inscricoesinterna"></a> <a href="http://cinemasemfronteiras.com.br/site/obra_listar.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;minhasinscricoes&#39;,&#39;&#39;,&#39;imagens/menu_int_minhas_inscricoes_over.png&#39;,1)"><img src="./form_files/menu_int_minhas_inscricoes.png" alt="Minhas Inscrições" name="minhasinscricoes" width="208" height="25" border="0" id="minhasinscricoes"></a> <a href="http://cinemasemfronteiras.com.br/site/logout.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage(&#39;logout&#39;,&#39;&#39;,&#39;imagens/menu_int_logout_over.png&#39;,1)"><img src="./form_files/menu_int_logout.png" alt="Logout" name="logout" width="208" height="25" border="0" id="logout"></a> <img src="./form_files/logotipo_4a_cineop.png" width="209" height="117" alt="4� CINE OP" align="left"> </div>
+	<div id="conteudo">
+	<h2><img src="./form_files/tit_inscricao-filme.png" width="190" height="24" alt="Inscrição de Filme"></h2>
+		<form id="form1" name="form1" method="post" action="http://cinemasemfronteiras.com.br/site/cadastro_filme_valida.php" class="formLongo" enctype="multipart/form-data">
+		<input name="obra" type="hidden" value="">
+		<label>*TÍtulo DO Filme</label>
+		<input name="TituloObra" type="text" value="" size="50">
+				<label>*Data de FINALIZAÇÃO</label>
+		Ano: <!--<select name="AnoProducaoObra" id="AnoProducaoObra"   >
+		<option value=''>Selecione</option>
+		<option value='2016' >2016</option>
+		<option value='2017' >2017</option>
+		</select>-->
+		<input name="AnoProducaoObra" type="number" value="" size="50">
+
+		Mês: <select name="MesProducaoObra" id="MesProducaoObra"><option value="1">Janeiro</option><option value="2">Fevereiro</option><option value="3">Março</option><option value="4">Abril</option><option value="5">Maio</option><option value="6">Junho</option><option value="7">Julho</option><option value="8">Agosto</option><option value="9">Setembro</option><option value="10">Outubro</option><option value="11">Novembro</option><option value="12">Dezembro</option></select>
+
+
+
+		<input name="nacionalidade" id="nacionalidade" type="hidden" value="Brasileiro">
+		<!--<p class="msgErro"></p>
+		<label>Nacionalidade do Filme</label>
+		<input name="nacionalidade" id="nacionalidade" type="radio" class="semBorda" value="Brasileiro"    onclick="alternaNacionalidade(this)"/>
+		Brasileiro
+		<input name="nacionalidade" id="nacionalidade" type="radio" class="semBorda" value="Internacional"  onclick="alternaNacionalidade(this)"/>
+		Internacional-->
+
+		<div id="campoBrasileiro" style="display:block;">
+		<label>*Estado de ProduÇÃo</label>
+
+		<select name="uf" id="uf">
+		<option value="--">-- Escolha o Estado --</option>
+		<option value="AC">Acre</option>
+		<option value="AL">Alagoas</option>
+		<option value="AP">Amapá</option>
+		<option value="AM">Amazonas</option>
+		<option value="BA">Bahia</option>
+		<option value="CE">Ceará</option>
+		<option value="DF">Distrito Federal</option>
+		<option value="ES">Espírito Santo</option>
+		<option value="GO">Goiás</option>
+		<option value="MA">Maranhão</option>
+		<option value="MT">Mato Grosso</option>
+		<option value="MS">Mato Grosso do Sul</option>
+		<option value="MG">Minas Gerais</option>
+		<option value="PA">Pará</option>
+		<option value="PB">Paraíba</option>
+		<option value="PR">Paraná</option>
+		<option value="PE">Pernambuco</option>
+		<option value="PI">Piauí</option>
+		<option value="RJ">Rio de Janeiro</option>
+		<option value="RN">Rio Grande do Norte</option>
+		<option value="RS">Rio Grande do Sul</option>
+		<option value="RO">Rondônia</option>
+		<option value="RN">Roraima</option>
+		<option value="SC">Santa Catarina</option>
+		<option value="SP">São Paulo</option>
+		<option value="SE">Sergipe</option>
+		<option value="TO">Tocantins</option>
+		</select>
+				</div>
+		<div id="campoInternacional" style="display:none;">
+			<label>*Pa�s</label>			<input name="Pais" type="text" value="Brasil" size="50">
+			<p class="msgErro"></p>
+		</div>
+
+
+
+		<label>*Filme</label>
+		<!-- (INI) CLASSE OBRA -->
+		<select onchange="alternaMostrinha(this)" name="ClasseObra" id="ClasseObra">
+		<option value="0">-- Escolha --</option>
+		<option value="Longa">Longa</option>
+		<option value="Media">Média</option>
+		<option value="Curta">Curta</option>
+		</select>
+						<label>*DuraÇÃo Exata (Formato hh:mm:ss) <br>
+		Longa: Filmes brasileiros com duração superior a 60 minutos<br>
+		Média: Filmes brasileiros com duração entre 30 e 60 minutos<br>
+		Curta: Filmes brasileiros com duração de até 30 minutos<br>
+		</label>
+		Hora: <select name="h">
+		<!--<option value="h" >HH</option>-->
+		<option value="00">00</option>
+		<option value="01">01</option>
+		<option value="02">02</option>
+		</select>
+		Min: <select name="m">
+		<!--<option value="m" >MM</option>-->
+		<option value="00">00</option>
+		<option value="01">01</option>
+		<option value="02">02</option>
+		<option value="03">03</option>
+		<option value="04">04</option>
+		<option value="05">05</option>
+		<option value="06">06</option>
+		<option value="07">07</option>
+		<option value="08">08</option>
+		<option value="09">09</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+		<option value="13">13</option>
+		<option value="14">14</option>
+		<option value="15">15</option>
+		<option value="16">16</option>
+		<option value="17">17</option>
+		<option value="18">18</option>
+		<option value="19">19</option>
+		<option value="20">20</option>
+		<option value="21">21</option>
+		<option value="22">22</option>
+		<option value="23">23</option>
+		<option value="24">24</option>
+		<option value="25">25</option>
+		<option value="26">26</option>
+		<option value="27">27</option>
+		<option value="28">28</option>
+		<option value="29">29</option>
+		<option value="30">30</option>
+		<option value="31">31</option>
+		<option value="32">32</option>
+		<option value="33">33</option>
+		<option value="34">34</option>
+		<option value="35">35</option>
+		<option value="36">36</option>
+		<option value="37">37</option>
+		<option value="38">38</option>
+		<option value="39">39</option>
+		<option value="40">40</option>
+		<option value="41">41</option>
+		<option value="42">42</option>
+		<option value="43">43</option>
+		<option value="44">44</option>
+		<option value="45">45</option>
+		<option value="46">46</option>
+		<option value="47">47</option>
+		<option value="48">48</option>
+		<option value="49">49</option>
+		<option value="50">50</option>
+		<option value="51">51</option>
+		<option value="52">52</option>
+		<option value="53">53</option>
+		<option value="54">54</option>
+		<option value="55">55</option>
+		<option value="56">56</option>
+		<option value="57">57</option>
+		<option value="58">58</option>
+		<option value="59">59</option>
+		</select>
+		Seg: <select name="s">
+		<!--<option value="s" >SS</option>-->
+		<option value="00">00</option>
+		<option value="01">01</option>
+		<option value="02">02</option>
+		<option value="03">03</option>
+		<option value="04">04</option>
+		<option value="05">05</option>
+		<option value="06">06</option>
+		<option value="07">07</option>
+		<option value="08">08</option>
+		<option value="09">09</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+		<option value="13">13</option>
+		<option value="14">14</option>
+		<option value="15">15</option>
+		<option value="16">16</option>
+		<option value="17">17</option>
+		<option value="18">18</option>
+		<option value="19">19</option>
+		<option value="20">20</option>
+		<option value="21">21</option>
+		<option value="22">22</option>
+		<option value="23">23</option>
+		<option value="24">24</option>
+		<option value="25">25</option>
+		<option value="26">26</option>
+		<option value="27">27</option>
+		<option value="28">28</option>
+		<option value="29">29</option>
+		<option value="30">30</option>
+		<option value="31">31</option>
+		<option value="32">32</option>
+		<option value="33">33</option>
+		<option value="34">34</option>
+		<option value="35">35</option>
+		<option value="36">36</option>
+		<option value="37">37</option>
+		<option value="38">38</option>
+		<option value="39">39</option>
+		<option value="40">40</option>
+		<option value="41">41</option>
+		<option value="42">42</option>
+		<option value="43">43</option>
+		<option value="44">44</option>
+		<option value="45">45</option>
+		<option value="46">46</option>
+		<option value="47">47</option>
+		<option value="48">48</option>
+		<option value="49">49</option>
+		<option value="50">50</option>
+		<option value="51">51</option>
+		<option value="52">52</option>
+		<option value="53">53</option>
+		<option value="54">54</option>
+		<option value="55">55</option>
+		<option value="56">56</option>
+		<option value="57">57</option>
+		<option value="58">58</option>
+		<option value="59">59</option>
+		</select>
+				<!-- CPB -->
+
+		<label>*O filme possui CPB<br>(Certificado de Produto Brasileiro emitido pela Ancine)?</label>
+		<input name="cpb" id="cpb" onclick="alternaCertificadoCpb(this)" type="radio" value="1" class="semBorda">
+		Sim
+		<input name="cpb" id="cpb" onclick="alternaCertificadoCpb(this)" type="radio" value="0" class="semBorda">
+		Não
+		
+		<div id="numCertificadoCpb" style="display: block;">
+		<label>*Número do CPB</label>
+		<input type="text" name="numCertificadoCpb" id="numCertificadoCpb" value="" size="40" maxlength="50">
+				</div>
+
+		<label>*O filme possui classificação indicativa oficial emitida pelo Ministério da Justi&amp;ccedil;a?</label>
+		<input name="certificado" id="certificado" type="radio" onchange="mostraCampoTipoCenas();" value="1" class="semBorda">
+		Sim
+		<input name="certificado" id="certificado" type="radio" onchange="mostraCampoTipoCenas();" class="semBorda" value="0">
+		Não
+	
+
+		<div id="classificacao" style="display: block;">
+		<label id="textoClassificacao1" style="display: block;">*Classificação</label>
+		<label id="textoClassificacao2" style="display:none;">*Assinale para qual faixa etária o filme é indicado</label>
+
+		<select name="ClassificacaoObra" id="ClassificacaoObra" onchange="mostraCampoTipoCenas();">
+		<option value="0">-- Escolha a Classificação --</option>
+		<option value="livre">Livre</option>
+		<option value="10">Não recomendado para menores de 10 anos</option>
+		<option value="12">Não recomendado para menores de 12 anos</option>
+		<option value="14">Não recomendado para menores de 14 anos</option>
+		<option value="16">Não recomendado para menores de 16 anos</option>
+		<option value="18">Não recomendado para menores de 18 anos</option>
+		</select>
+			</div>
+
+		<div id="contCenas" style="display:none;">
+			<label>*Conteúdo das Cenas.<br>
+			(EX: Cenas de Sexo, Violência, Uso de Drogas, Etc...)
+			</label>
+			<textarea name="ConteudoCenas" cols="40" rows="4" id="ConteudoCenas"></textarea>
+					</div>
+
+		<label>*Formato em que o filme foi finalizado:</label>
+		<!-- (INI) FORMATO -->
+		<select name="Formato" id="Formato">
+		<option value="0">-- Escolha o formato --</option>
+				<option value="122">
+		DVD		</option>
+				<option value="131">
+		DCP		</option>
+				<option value="132">
+		Blu-ray		</option>
+				<option value="133">
+		Digital (H264)		</option>
+				</select>
+		
+				<label>*Categoria</label>
+		<select name="categoria" id="categoria">
+		<option value="0">-- Escolha a categoria --</option>
+		<option value="pessoas">Pessoas</option>
+		<option value="lugares">Lugares</option>
+		<option value="comunidades">Comunidades</option>
+		</select>
+		
+				<label>*Janela final para exibição:</label>
+		<select name="JanelaObra" id="JanelaObra">
+		<option value="0">-- Escolha a janela --</option>
+				<option value="33">
+		1,33		</option>
+				<option value="40">
+		Flat		</option>
+				<option value="66">
+		1,66		</option>
+				<option value="85">
+		1,85		</option>
+				<option value="100">
+		Scope		</option>
+				<option value="101">
+		4x3 full		</option>
+				<option value="102">
+		4x3 anamórfico		</option>
+				<option value="103">
+		16x9		</option>
+				</select>
+				<!--<label>*Letter box</label>
+		<input name="letterbox" type="radio" value="1" class="semBorda"    />
+		Sim
+		<input name="letterbox" type="radio" class="semBorda" value="0"   />
+		Não
+		-->
+		<label>*Som</label>
+		<!-- (INI) SOM -->
+		<select name="SomObra" id="SomObra">
+		<option value="0">-- Escolha o som --</option>
+				<option value="1">
+		Mono		</option>
+				<option value="2">
+		Stereo		</option>
+				<option value="7">
+		5.1		</option>
+				</select>
+			<!-- (FIM) SOM -->
+		<label>*Cor</label>
+		<input name="Coloracao" type="radio" value="1" class="semBorda">
+		Preto &amp; Branco
+		<input name="Coloracao" type="radio" value="2" class="semBorda">
+		Colorido
+				<label>*GÊnero</label>
+		<select name="Genero" id="Genero">
+		<option value="0">-- Escolha o Gênero --</option>
+		<option value="ficcao">Ficção</option>
+		<option value="documentario">Documentário</option>
+		<option value="animacao">Animação</option>
+		<option value="experimental">Experimental</option>
+		<option value="experimental">Videoarte</option>
+		</select>
+		
+		<label>*Direção</label>
+		<textarea name="DirecaoObra" cols="40" rows="1" id="DirecaoObra"></textarea>
+				<label>Roteiro</label>
+		<textarea name="Roteiro" cols="40" rows="3" id="Roteiro" style="margin-top: 0px; margin-bottom: 0px; height: 192px;"></textarea>
+		<label>Empresa Produtora</label>
+		<textarea name="EmpresaProdutoraObra" cols="40" rows="1" id="EmpresaProdutoraObra"></textarea>
+		<label>Direçao de Produção</label>
+		<textarea name="DirecaoProducao" cols="40" rows="1" id="DirecaoProducao"></textarea>
+		<label>Direçao de Fotografia</label>
+		<textarea name="Fotografia" cols="40" rows="1" id="Fotografia"></textarea>
+		<label>Direçao de Arte</label>
+		<textarea name="DirecaoDeArte" cols="40" rows="1" id="DirecaoDeArte"></textarea>
+		<label>Montagem / Ediçao</label>
+		<textarea name="MontagemObra" cols="40" rows="1" id="MontagemObra"></textarea>
+		<label>Trilha Sonora</label>
+		<textarea name="TrilhaSonoraObra" cols="40" rows="2" id="TrilhaSonoraObra"></textarea>
+		<label>Som Direto</label>
+		<textarea name="EdicaoDeSom" cols="40" rows="1" id="EdicaoDeSom"></textarea>
+		<label>Cenografia</label>
+		<textarea name="CenografiaObra" cols="40" rows="1" id="CenografiaObra"></textarea>
+		<label>Figurino</label>
+		<textarea name="FigurinoObra" cols="40" rows="1" id="FigurinoObra"></textarea>
+		<label>Elenco</label>
+		<textarea name="ElencoObra" cols="40" rows="4" id="ElencoObra"></textarea>
+		<label>*Sinopse</label>
+		<textarea name="SinopseObra" cols="40" rows="7" id="SinopseObra" onkeyup="limitaTextarea(this.value)"></textarea><br>
+		<strong>(Caracteres restantes: <span id="contador">500</span>)</strong>
+		
+		<!-- NOVOS -->
+
+		<label>*Este filme possui diálogos?</label>
+		<input onclick="alternaDialogos(this)" name="possuiDialogos" id="possuiDialogos" type="radio" value="1" class="semBorda">
+		Sim
+		<input onclick="alternaDialogos(this)" name="possuiDialogos" id="possuiDialogos" type="radio" value="0" class="semBorda">
+		Não
+		
+		<div id="campoIdiomas" style="display:none;">
+		<label>Em quais idiomas é falado?</label>
+		<textarea name="Idiomas" cols="40" rows="2" id="Idiomas"></textarea>
+					</div>
+
+
+
+
+		<label>*Este filme possui cópia legendada?</label>
+		<input onclick="alternaLegenda(this)" name="possuiLegenda" id="possuiLegenda" type="radio" value="1" class="semBorda">
+		Sim
+		<input onclick="alternaLegenda(this)" name="possuiLegenda" id="possuiLegenda" type="radio" value="0" class="semBorda">
+		Não
+		
+		<div id="campoIdiomasLegenda" style="display:none;">
+		<label>Em quais idiomas?</label>
+		<textarea name="IdiomasLegenda" cols="40" rows="2" id="IdiomasLegenda"></textarea>
+				</div>
+
+
+
+		<label>*Este filme possui lista de diálogos?</label>
+		<input onclick="alternaListaDialogos(this)" name="possuiListaDialogos" id="possuiListaDialogos" type="radio" value="1" class="semBorda">
+		Sim
+		<input onclick="alternaListaDialogos(this)" name="possuiListaDialogos" id="possuiListaDialogos" type="radio" value="0" class="semBorda">
+		Não
+		
+		<div id="campoListaDialogos" style="display:none;">
+		<label>Em quais idiomas?</label>
+		<textarea name="IdiomasLista" cols="40" rows="2" id="IdiomasLista"></textarea>
+					</div>
+		
+		
+		<label>Este filme possui acessibilidade para portadores de necessidades especiais?</label>
+		<input onclick="alternaListaAcessibilidade(this)" name="possuiAcessibilidade" id="possuiAcessibilidade" type="radio" value="1" class="semBorda">
+		Sim
+		<input onclick="alternaListaAcessibilidade(this)" name="possuiAcessibilidade" id="possuiAcessibilidade" type="radio" value="0" class="semBorda">
+		Não
+		<div id="campoListaAcessibilidade" style="display:none;">
+		<label>Em qual a acessibilidade?</label>
+			<select name="acessibilidade">
+				<option>Selecione</option>
+				<option value="audiodescricao">Audiodescrição</option>
+				<option value="legenda">Legenda</option>
+			</select>
+		</div>
+
+
+		<!-- FIM NOVOS -->
+
+
+
+<div id="mostrinha" style="display:none;">
+		<label>Este filme se enquadra nas categorias abaixo?<br>
+		(essa marcação NÃO exclui o processo de seleção para participar da mostra principal) </label>
+		<input name="Mostrinha" type="checkbox" class="semBorda" id="Mostrinha" value="1">
+		Mostrinha de Cinema – programação de curtas dedicada ao público infanto-juvenil <br>
+		<input name="MostraLivre" type="checkbox" class="semBorda" id="MostraLivre" value="1">
+		Curtas resultantes de oficinas, associações, ongs, projetos especiais de formação não-universitária
+
+</div>
+
+		<label>Filmografia do Diretor</label>
+		<textarea name="FilmografiaDiretorObra" cols="40" rows="4" id="FilmografiaDiretorObra"></textarea>
+
+		<label>*Este filme já participou de outros festivais?</label>
+		<input onclick="alternaJaParticipou(this)" name="indParticipou" id="indParticipou" type="radio" value="1" class="semBorda">
+		Sim
+		<input onclick="alternaJaParticipou(this)" name="indParticipou" id="indParticipou" type="radio" value="0" class="semBorda">
+		Não
+
+		
+		<div id="campoJaParticipou" style="display:none;">
+		<label>*Cite os festivais e prêmios recebidos:</label>
+		<textarea name="FestivaisEPremios" cols="40" rows="4" id="FestivaisEPremios"></textarea>
+				<div id="campoJaParticipouOculto"> </div>
+		</div>
+
+
+				<label>Nome p/ contato</label>
+		<input name="contatoNome" type="text" id="contatoNome" value="Ricardo Viana">
+				<label>Email</label>
+		<input name="contatoEmail" type="text" id="contatoEmail" value="ricardovianasi@gmail.com" size="40" maxlength="100">
+				<label>DDD</label>
+		<input name="contatoDDD" type="text" id="contatoDDD" value="31" size="2" maxlength="2">
+		<label>Telefone</label>
+		<input name="contatoTelefone" type="text" id="contatoTelefone" value="36497362" size="20" maxlength="20">
+		<label>Celular</label>
+		<input name="contatoCelular" type="text" id="contatoCelular" value="98886343" size="20" maxlength="20">
+				<label>Endereço</label>
+		<input name="contatoEndereco" type="text" id="contatoEndereco" value="jakshdfkjlhas flakjsdhfkljahsdkhf laskdhlkasjdfh l" size="40" maxlength="50">
+				<label>CEP</label>
+		<input name="contatoCEP" type="text" id="contatoCEP" value="33030510" size="9" maxlength="9">
+		<label>Cidade</label>
+		<input name="contatoCidade" type="text" id="contatoCidade" value="Belo Horizonte" size="40" maxlength="50">
+		<p> </p>
+
+
+		<h3>*FOTO DO FILME<br>
+		FORMATO: JPG, JPEG, PNG<br>
+		TAMANHO MÍNIMO: 500KB<br>
+		TAMANHO MÁXIMO: 3MB<br>
+
+		<!--O nome do arquivo n&#65533;o pode conter caracteres epeciais<br />
+(Acentos, cedilha e sinais de pontua&#65533;&#65533;o)-->
+		</h3>
+		<!--<input name="arquivo" type="file" id="arquivo" size="50" accept="text/plain" onchange="MyFile.value=arquivo.value" maxlength="250" /><br />-->
+						<div id="example3" style="width:auto;">
+
+							<label for="example3_field">Escolha a imagem:</label>
+
+							<input name="myFile3" id="example3_field" accept="jpg|jpeg|png" type="file">
+
+														
+
+						</div>
+		<p>*CRÉDITOS DA FOTO:<br>
+		<span style="font-size: 13px; font-weight: bold;">(Se o CRÉDITO DA FOTO não existir, favor inserir a palavra DIVULGAÇÃO para continuar) </span>
+		<input name="creditoFoto" id="creditoFoto" type="text" value="" size="50"></p>
+
+		
+
+
+
+		<input name="MyFile" type="hidden" id="MyFile" tabindex="99" size="1">
+
+
+
+
+		<label>Trecho de divulgação (inserir link do Youtube ou Vimeo)</label>
+		<input name="trailler" type="text" id="trailler" value="" size="40" maxlength="50">
+		<br>
+		<br>
+		
+		
+		<!-- ENVIO FILME -->
+
+		<label>*Indique a forma de envio da cópia do filme para seleção: VIRTUAL</label>
+
+		<div id="dadosEnvio">
+		<label>*Informe o endereço do link para acesso ao filme:</label>
+		<input type="text" name="urlEnvio" id="urlEnvio" value="" size="40" maxlength="250">
+				<label>Senha de acesso (se for necessária para acesso ao filme):</label>
+		<input type="text" name="senhaEnvio" id="senhaEnvio" value="" size="40" maxlength="250">
+		<br>Observação: A organização do evento não se responsabiliza por links incorretos. O filme poderá ser excluído do processo de seleção caso não seja possével ter acesso e/ou exibição do mesmo.
+
+		</div>
+
+
+
+		<p></p>
+
+
+		<!--<h3>*PROCESSO UNIFICADO DE INSCRIÇÃO DE FILMES<br />
+		CINEMA SEM FRONTEIRAS</h3>-->
+
+
+		<p style="font-size: 13px;">Informe para quais mostras deseja inscrever seu filme:</p>
+
+
+	
+
+
+
+<div id="mostra1"><input type="checkbox" value="1078" id="mostraop1" class="ckmostras" name="mostras[]"><span style="font-size: 12px;"> Autorizo a inscrição do filme para a seleção da 11ª CineBH - Mostra de Cinema de Belo Horizonte</span><br><br></div>			<p style="font-size: 12px;">*Para habilitar o envio da ficha de inscrição é preciso preencher os campos obrigatórios e estar de acordo com os itens abaixo:<br></p>
+
+			<!--
+			<p style="font-size: 12px;">
+			<input name="inscCineop" type="checkbox" class="semBorda" onchange="habilitaCadastro();" id="inscCineop" value="1044"   />
+			Autorizo a inscrição do filme para a seleção da 7&ordf; CINEOP &ndash; Mostra de Cinema de Ouro Preto (data prevista do evento &ndash; 15 a 20 junho de 2011) </p>
+
+	
+
+		<p style="font-size: 12px;">
+		<input name="inscCINEBH" type="checkbox" onchange="habilitaCadastro();" class="semBorda" id="inscCINEBH" value="1042"   />
+		Autorizo a inscrição do filme para a seleção da 5&ordf; Mostra CineBH (data prevista do evento -   29 de setembro a 04 de outubro de 2011)</p>
+
+		<br />
+		<hr />
+
+		<br />
+		<p style="font-size: 12px;">
+		-->
+
+		<h3><a href="http://cinemasemfronteiras.com.br/site/cadastro_filme_full.php#janela1" rel="modal">LEIA AQUI O REGULAMENTO &gt;&gt;</a></h3>
+
+		<p>
+		<input name="aceito" type="checkbox" onchange="habilitaCadastro();" class="semBorda" id="aceito" value="1">
+		<span style="font-size: 12px;">Eu li e estou de acordo com as condições descritas no regulamento de inscrições de filmes</span></p>
+		<!--<p>-->
+		<input name="btnObraInclusao" type="submit" id="btnObraInclusao" value="Cadastrar" class="btForm" style="display: none" disabled="">
+
+
+
+	</form>
+	</div>
+	<!--<div id="rodape">
+            <p>UNIVERSO PRODU&Ccedil;&Atilde;O<br />
+            (31) 3282-2366 - up@universoproducao.com.br<br />
+            RUA PIRAPETINGA, 567 - SERRA - 30220-150 - BELO HORIZONTE - MG<br />
+            Copyright &copy; 2013. Universo Produ&ccedil;&atilde;o - Todos os direitos reservados</p>
+            
+            <div id="assinaturas"> 
+				<a href="http://agencia51.com.br" target="_blank">
+					<img style="vertical-align: middle;margin-left: 5px;" src="http://agencia51.com.br/assets/site/img/icones/logo-mini.png" title="Ag&ecirc;ncia 51 - Desenvolvimento de sites e sistemas" alt="Agência 51 - Desenvolvimento de sites e sistemas">
+				</a>
+			</div>
+            
+        </div>
+        
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10028533-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+-->
+</div>
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+
+				$('#aceito,#mostras,.ckmostras').click(function(){
+
+
+						var botao = document.getElementById('btnObraInclusao');
+
+						if((document.getElementById('mostraop1').checked==true || document.getElementById('mostraop2').checked==true) && document.getElementById('aceito').checked==true) {
+							//alert("entreou");
+
+							/*if(document.form1.inscCINEBH.checked==true && document.form1.aceito.checked==true) {*/
+
+									//alert(img);
+									$("#msg_obgrt").hide();
+									$("#btnObraInclusao").show();
+									botao.disabled = false;
+
+
+
+						} else {
+
+							//alert("nao entroue");
+							$("#msg_obgrt").show();
+							$("#btnObraInclusao").hide();
+							botao.disabled = true;
+
+						}
+				});
+			});
+
+
+</script>
+
+
+
+<div id="dcngeagmmhegagicpcmpinaoklddcgon" class="dcngeagmmhegagicpcmpinaoklddcgon" style="display: none;"></div></body></html>

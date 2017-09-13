@@ -1,0 +1,114 @@
+
+#menuCinemaSemFronteiras,#topo,#menuPrincipal,#caminhoPagina, h1,h2,#menuInterno,#rodape ,#botoes{
+	display: none;
+}
+#conteudo,#moldura{
+	font-family: Arial, Helvetica;
+	float: both;
+	display: block;
+	margin-left:10px;
+	padding-left: 0;
+	text-align:left;
+	width:650px;
+
+}
+
+a:link, a:visited {
+	color: #4D4D4D;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #FC4E28;
+	text-decoration: none;
+}
+
+
+h1 {
+	padding: 0 0 20px 4px;
+	font: normal 36px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #FC4E28;
+	text-transform: uppercase;
+}
+h2 {
+	padding: 0 0 10px;
+	font: normal 23px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #FC4E28;
+	text-transform: uppercase;
+}
+h3 {
+	padding: 0 0 5px;
+	font: 12px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #FC4E28;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+h4 {
+	padding: 0 0 20px;
+	font: normal 16px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #fea88f;
+}
+.inscricao h4 {
+	padding: 15px 0 2px;
+	font: normal 16px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #fea88f;
+}
+h4 a:link, h4 a:visited {
+	padding: 0 0 20px;
+	font: normal 16px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #FC4E28;
+}
+h5 {
+	padding: 6px 0 10px;
+	font: 10px "Helvetica", Arial, Helvetica, sans-serif;
+}
+h6 {
+	font: normal 12px "Helvetica", Arial, Helvetica, sans-serif;
+	color: #FC4E28;
+	margin: 0 15px 18px 0;
+	line-height: 18px;
+}
+h6 a:link, h6 a:visited {
+	color: #FC4E28;
+}
+
+
+#conteudo p, #conteudoTexto p, #noticiasHome p {
+	margin: 0 0 18px;
+	line-height: 18px;
+}
+#conteudo p strong, #conteudoTexto p strong {
+	color: #000;
+}
+#conteudo ul {
+	margin: 0 0 30px;
+	line-height: 18px;
+}
+#conteudo ul li {
+	margin: 4px 0 8px 16px;
+}
+
+.btForm {
+	background: #FD7401;
+	color: #FFF;
+	margin: 10px 0px;
+	padding: 2px 8px;
+	border: none;
+	font: 10px "Helvetica", Arial, Helvetica, sans-serif;
+}
+
+.linhasTabelas {
+	border-bottom: 1px solid #E2E2E2;
+}
+
+#tabelaTermoCE
+	{
+		margin-left:auto;
+		margin-right: auto;
+		width:100%;
+		max-width: 800px;
+		border-collapse: collapse;
+	}

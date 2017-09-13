@@ -1,1 +1,0 @@
-Eg.: View helpers

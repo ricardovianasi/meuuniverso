@@ -1,1 +1,0 @@
-Eg.: Components scripts

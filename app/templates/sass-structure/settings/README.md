@@ -1,5 +1,0 @@
-# settings
-
-- Variables
-- Colors
-- Constants
