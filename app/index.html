@@ -17,6 +17,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="/bower_components/dropzone/dist/min/dropzone.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -26,19 +27,705 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Sass</li>
-      </ul>
+    <div class="container">
+      <h1>Formulário</h1>
+      <form role="form" name="form" method="post" action="#" enctype="multipart/form-data" id="form" data-parsley-validate="">
+        <div id="tab-1" class="tab-content current">
+          <input name="obra" type="hidden" value="">
+          <div class="form-group">
+            <label>Título do filme *</label>
+            <input name="TituloObra" type="text" value="" class="form-control" required="">
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Data de finalização *</label>
+                <input name="AnoProducaoObra" type="number" value="" class="form-control" required="">
+              </div>
+              <div class="col-md-6">
+                <label>Mês</label> 
+                <select name="MesProducaoObra" class="form-control" required="">
+                  <option value="1">Janeiro</option>
+                  <option value="2">Fevereiro</option>
+                  <option value="3">Março</option>
+                  <option value="4">Abril</option>
+                  <option value="5">Maio</option>
+                  <option value="6">Junho</option>
+                  <option value="7">Julho</option>
+                  <option value="8">Agosto</option>
+                  <option value="9">Setembro</option>
+                  <option value="10">Outubro</option>
+                  <option value="11">Novembro</option>
+                  <option value="12">Dezembro</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <input name="nacionalidade" id="nacionalidade" type="hidden" value="Brasileiro">
+
+          <div class="form-group">
+            <label>Estado de Produção *</label>
+            <select name="uf" id="uf" class="form-control" required="">
+              <option value="--">-- Escolha o Estado --</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RN">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>País *</label>      
+            <input name="Pais" type="text" value="Brasil" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>*Filme *</label>
+            <!-- (INI) CLASSE OBRA -->
+            <select name="ClasseObra" class="form-control" required="">
+              <option value="0">-- Escolha --</option>
+              <option value="Longa">Longa</option>
+              <option value="Media">Média</option>
+              <option value="Curta">Curta</option>
+            </select>
+
+            <p class="help-block">Duração Exata (Formato hh:mm:ss) <br>
+              Longa: Filmes brasileiros com duração superior a 60 minutos<br>
+              Média: Filmes brasileiros com duração entre 30 e 60 minutos<br>
+              Curta: Filmes brasileiros com duração de até 30 minutos<br>
+            </p>
+            <div class="row">
+              <div class="col-md-4">
+                <label>Hora</label>
+                <select name="h" class="form-control" required="">
+                  <option value="00">00</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label>Minutos</label> 
+                <select name="m" class="form-control" required="">
+                  <option value="00">00</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                  <option value="32">32</option>
+                  <option value="33">33</option>
+                  <option value="34">34</option>
+                  <option value="35">35</option>
+                  <option value="36">36</option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                  <option value="53">53</option>
+                  <option value="54">54</option>
+                  <option value="55">55</option>
+                  <option value="56">56</option>
+                  <option value="57">57</option>
+                  <option value="58">58</option>
+                  <option value="59">59</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label>Segundos</label> 
+                <select name="s" class="form-control" required="">
+                  <option value="00">00</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                  <option value="32">32</option>
+                  <option value="33">33</option>
+                  <option value="34">34</option>
+                  <option value="35">35</option>
+                  <option value="36">36</option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                  <option value="53">53</option>
+                  <option value="54">54</option>
+                  <option value="55">55</option>
+                  <option value="56">56</option>
+                  <option value="57">57</option>
+                  <option value="58">58</option>
+                  <option value="59">59</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>O filme possui CPB *<br>(Certificado de Produto Brasileiro emitido pela Ancine)?</label>
+            <div class="radio">
+              <label>
+                <input name="cpb" type="radio" value="1" required=""> Sim
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input name="cpb" type="radio" value="0"> Não
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Número do CPB *</label>
+            <input type="text" name="numCertificadoCpb" class="form-control" value="" maxlength="50" required="">
+          </div>
+          
+          <div class="form-group">
+            <label>O filme possui classificação indicativa oficial emitida pelo Ministério da Justiça? *</label>
+            <div class="radio">
+              <label>
+                <input name="certificado" type="radio" value="1" required=""> Sim
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input name="certificado" type="radio" value="0"> Não
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Classificação *</label>
+            <label>Assinale para qual faixa etária o filme é indicado *</label>
+            <select name="ClassificacaoObra" class="form-control" required="">
+              <option value="0">-- Escolha a Classificação --</option>
+              <option value="livre">Livre</option>
+              <option value="10">Não recomendado para menores de 10 anos</option>
+              <option value="12">Não recomendado para menores de 12 anos</option>
+              <option value="14">Não recomendado para menores de 14 anos</option>
+              <option value="16">Não recomendado para menores de 16 anos</option>
+              <option value="18">Não recomendado para menores de 18 anos</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Conteúdo das Cenas *<br>
+              (EX: Cenas de Sexo, Violência, Uso de Drogas, Etc...)
+            </label>
+            <textarea name="ConteudoCenas" cols="40" rows="4" class="form-control" required=""></textarea>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-4">
+                <label>Formato em que o filme foi finalizado *</label>
+                <select name="Formato" class="form-control" required="">
+                  <option value="0">-- Escolha o formato --</option>
+                  <option value="122">DVD</option>
+                  <option value="131">DCP</option>
+                  <option value="132">Blu-ray</option>
+                  <option value="133">Digital (H264)</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label>Categoria *</label>
+                <select name="categoria" class="form-control" required="">
+                  <option value="0">-- Escolha a categoria --</option>
+                  <option value="pessoas">Pessoas</option>
+                  <option value="lugares">Lugares</option>
+                  <option value="comunidades">Comunidades</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label>Janela final para exibição *</label>
+                <select name="JanelaObra" class="form-control" required="">
+                  <option value="0">-- Escolha a janela --</option>
+                  <option value="33">1,33</option>
+                  <option value="40">Flat</option>
+                  <option value="66">1,66</option>
+                  <option value="85">1,85</option>
+                  <option value="100">Scope</option>
+                  <option value="101">4x3 full</option>
+                  <option value="102">4x3 anamórfico</option>
+                  <option value="103">16x9</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-4">
+                <label>Som *</label>
+                <select name="SomObra" class="form-control" required="">
+                  <option value="0">-- Escolha o som --</option>
+                  <option value="1">Mono</option>
+                  <option value="2">Stereo</option>
+                  <option value="7">5.1</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label>Cor *</label>
+                <select name="Cor" class="form-control" required="">
+                  <option selected>-- Escolha a cor --</option>
+                  <option value="1">Preto e Branco</option>
+                  <option value="2">Colorido</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label>Gênero *</label>
+                <select name="Genero" class="form-control" required="">
+                  <option value="0">-- Escolha o Gênero --</option>
+                  <option value="ficcao">Ficção</option>
+                  <option value="documentario">Documentário</option>
+                  <option value="animacao">Animação</option>
+                  <option value="experimental">Experimental</option>
+                  <option value="experimental">Videoarte</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <ul class="tabs">
+            <li class="tab-link" data-tab="tab-2">
+              <a href="#" type="button" class="btn btn-primary">Seguinte</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div id="tab-2" class="tab-content">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Direção *</label>
+                <textarea name="DirecaoObra" cols="40" rows="6" class="form-control" required=""></textarea>
+              </div>
+              <div class="col-md-6">
+                <label>Roteiro</label>
+                <textarea name="Roteiro" cols="40" rows="6" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Empresa Produtora</label>
+                <textarea name="EmpresaProdutoraObra" cols="40" rows="6" class="form-control"></textarea>
+              </div>
+              <div class="col-md-6">
+                <label>Direçao de Produção</label>
+                <textarea name="DirecaoProducao" cols="40" rows="6" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Direçao de Fotografia</label>
+                <textarea name="Fotografia" cols="40" rows="6" class="form-control"></textarea>
+              </div>
+              <div class="col-md-6">
+                <label>Direçao de Arte</label>
+                <textarea name="DirecaoDeArte" cols="40" rows="6" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Montagem / Ediçao</label>
+                <textarea name="MontagemObra" cols="40" rows="6" class="form-control"></textarea>
+              </div>
+              <div class="col-md-6">
+                <label>Trilha Sonora</label>
+                <textarea name="TrilhaSonoraObra" cols="40" rows="6" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Som Direto</label>
+                <textarea name="EdicaoDeSom" cols="40" rows="6" class="form-control"></textarea>
+              </div>
+              <div class="col-md-6">
+                <label>Cenografia</label>
+                <textarea name="CenografiaObra" cols="40" rows="6" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Figurino</label>
+                <textarea name="FigurinoObra" cols="40" rows="6" class="form-control"></textarea>
+              </div>
+              <div class="col-md-6">
+                <label>Elenco</label>
+                <textarea name="ElencoObra" cols="40" rows="6" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label>Sinopse *</label>
+            <textarea name="SinopseObra" cols="40" rows="10" class="form-control" required=""></textarea>
+          </div>
+          <ul class="tabs">
+            <li class="tab-link" data-tab="tab-3">
+              <a href="#" type="button" class="btn btn-primary">Seguinte</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="tab-3" class="tab-content">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-4">
+                <label>Este filme possui diálogos? *</label>
+                <div class="radio">
+                  <label>
+                     <input name="possuiDialogos" type="radio" value="1" required=""> Sim
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input name="possuiDialogos" type="radio" value="0"> Não
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <label>Este filme possui cópia legendada? *</label>
+                <div class="radio">
+                  <label>
+                     <input name="possuiLegenda" type="radio" value="1" required=""> Sim
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input name="possuiLegenda" type="radio" value="0"> Não
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <label>Este filme possui lista de diálogos? *</label>
+                <div class="radio">
+                  <label>
+                    <input name="possuiListaDialogos" type="radio" value="1" required=""> Sim
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input name="possuiListaDialogos" type="radio" value="0"> Não
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Em quais idiomas é falado? *</label>
+            <textarea name="Idiomas" cols="40" rows="6" class="form-control"></textarea>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Este filme possui acessibilidade para portadores de necessidades especiais? *</label>
+                <div class="radio">
+                  <label>
+                    <input name="possuiAcessibilidade" type="radio" value="1"> Sim
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input name="possuiAcessibilidade" type="radio" value="0"> Não
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label>Em qual a acessibilidade?</label>
+                <select name="acessibilidade" class="form-control">
+                  <option>Selecione</option>
+                  <option value="audiodescricao">Audiodescrição</option>
+                  <option value="legenda">Legenda</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+             <label>Este filme se enquadra nas categorias abaixo? *<br>
+            (essa marcação NÃO exclui o processo de seleção para participar da mostra principal)</label>
+            <div class="checkbox">
+              <label>
+                 <input name="Mostrinha" type="checkbox" id="Mostrinha" value="1" required="">
+                 Mostrinha de Cinema – programação de curtas dedicada ao público infanto-juvenil
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input name="MostraLivre" type="checkbox" id="MostraLivre" value="1">
+                Curtas resultantes de oficinas, associações, ongs, projetos especiais de formação não-universitária
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Filmografia do Diretor</label>
+            <textarea name="FilmografiaDiretorObra" cols="40" rows="10" class="form-control"></textarea>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Este filme já participou de outros festivais? *</label>
+                <div class="radio">
+                  <label>
+                     <input name="indParticipou" type="radio" value="1" required=""> Sim
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input name="indParticipou" type="radio" value="0"> Não
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label>Se sim, cite os festivais e prêmios recebidos:</label>
+                <textarea name="FestivaisEPremios" cols="40" rows="6" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Nome p/ contato</label>
+                <input name="contatoNome" type="text" id="contatoNome" value="" class="form-control">
+              </div>
+              <div class="col-md-6">
+                <label>Email</label>
+                <input name="contatoEmail" type="text" id="contatoEmail" value="" size="40" maxlength="100" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Telefone</label>
+                <input name="contatoTelefone" type="text" value="" class="form-control">
+              </div>
+              <div class="col-md-6">
+                <label>Celular</label>
+                <input name="contatoCelular" type="text" value="" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Endereço</label>
+                <input name="contatoEndereco" type="text" value="" class="form-control">
+              </div>
+              <div class="col-md-6">
+                <label>CEP</label>
+                <input name="contatoCEP" type="text" value="" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Cidade</label>
+                <input name="contatoCidade" type="text" value="" class="form-control">
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="form-group">
+            <p class="help-block">
+              FOTO DO FILME <br/>
+              FORMATO: JPG, JPEG, PNG <br/>
+              TAMANHO MÍNIMO: 500KB <br/>
+              TAMANHO MÁXIMO: 3MB <br/>
+            </p>
+            <label>Escolha a imagem *</label>
+            <input name="myFile3" accept="jpg|jpeg|png" type="file" required="">
+          </div>
+          
+          <div class="form-group">
+            <label>Créditos da foto *</label>
+            <p class="help-block">(Se o CRÉDITO DA FOTO não existir, favor inserir a palavra DIVULGAÇÃO para continuar)</p>
+            <input name="creditoFoto" type="text" value="" class="form-control"></p>
+          </div>
+
+          <div class="form-group">
+            <label>Trecho de divulgação (inserir link do Youtube ou Vimeo)</label>
+            <input name="trailler" type="text" value="" class="form-control">
+          </div>
+
+
+          <div class="form-group">
+            <label>Indique a forma de envio da cópia do filme para seleção: VIRTUAL</label>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Informe o endereço do link para acesso ao filme *</label>
+                <input type="text" name="urlEnvio" id="urlEnvio" value="" class="form-control" required="">
+              </div>
+              <div class="col-md-6">
+                <label>Senha de acesso (se for necessária para acesso ao filme):</label>
+                <input type="text" name="senhaEnvio" id="senhaEnvio" value="" class="form-control">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <p class="help-block">Observação: A organização do evento não se responsabiliza por links incorretos. O filme poderá ser excluído do processo de seleção caso não seja possével ter acesso e/ou exibição do mesmo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Informe para quais mostras deseja inscrever seu filme:</label>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="1078" id="mostraop1" class="ckmostras" name="mostras[]"> Autorizo a inscrição do filme para a seleção da 11ª CineBH - Mostra de Cinema de Belo Horizonte
+              </label>
+            </div>
+          </div>
+
+         
+          <div class="form-group">
+            <label>*Para habilitar o envio da ficha de inscrição é preciso preencher os campos obrigatórios e estar de acordo com os itens abaixo</label> <br/>
+            <a href="http://cinemasemfronteiras.com.br/site/cadastro_filme_full.php#janela1" class="btn btn-default btn-xs">LEIA AQUI O REGULAMENTO</a>
+            <div class="checkbox">
+              <label>
+                <input name="aceito" type="checkbox" value="1"> Eu li e estou de acordo com as condições descritas no regulamento de inscrições de filmes</p>
+              </label>
+            </div>
+          </div>
+
+          <input name="btnObraInclusao" type="submit"  value="Cadastrar" class="btn btn-primary">
+        </div>
+      </form>
     </div>
     
 
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/parsleyjs/dist/parsley.js"></script>
@@ -48,6 +735,7 @@
     <script src="/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pt-BR.min.js"></script>
     <script src="/bower_components/blockUI/jquery.blockUI.js"></script>
     <script src="/bower_components/bootbox.js/bootbox.js"></script>
+    <script src="/bower_components/dropzone/dist/min/dropzone.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js scripts/main.js -->
